@@ -1,0 +1,23 @@
+Ultra-low-power sensor systems represent a scalable and sustainable way for enabling the ubiquitous sensing applications of tomorrow. 
+%
+Existing systems draw power from small energy-storage devices, such as tiny batteries or capacitors, and use energy-harvesting techniques to restore energy.
+%
+With power-consumption being a first-class constraint in such systems, it is natural for system designers to prioritize low-power and low-energy operation over other parameters during the design of the system architecture. 
+%
+When there is little energy to harvest, restoring energy takes longer. 
+%
+Under these conditions, low-energy designs work well since they minimize energy-restoration times, enabling the system to be active faster. 
+%
+However, a low-energy operation generally comes at the cost of worsened performance latencies. 
+%
+When there is a large amount of energy to be harvested, these systems now become bottlenecked by this reduced performance, since the benefits of smaller energy-restoration times are outweighed by increased computation latencies.
+%
+Existing models for energy-harvesting sensor systems do not account for this phenomenon, and consequently promote designs that are optimal only for certain low-energy operating conditions.
+
+In this work, we present a new model for energy-harvesting sensor systems that captures the behavior of these systems across a variety of energy-harvesting conditions. 
+%
+Our model takes into account both the time for executing computational tasks as well as the time for restoring the energy consumed by that task, to generate a more complete view of the system performance. 
+%
+Using this model, we develop an adaptable system architecture that can reconfigure its computational resources to optimize its operation according to the amount of harvestable energy. 
+%
+Our model shows that performance in an energy-harvesting system is a dynamic parameter depending on deployment conditions and needs adaptive optimizations, rather than a static parameter which can be optimized for at design time.

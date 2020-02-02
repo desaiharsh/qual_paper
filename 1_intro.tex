@@ -1,0 +1,50 @@
+\section{Introduction}
+\label{sec:intro}
+
+Characterizing the human environment gives us the ability to make smarter and faster decisions regarding different issues like security, comfort, efficiency, etc. 
+%
+For example, information regarding traffic patterns at rush hours can be used to design more efficient roadway infrastructures, reducing traveling time and pollution. 
+%
+To perform this characterization, we will need the ability to deploy sensors on a massive scale , while also being sustainable in terms of cost and environmental impact. 
+%
+Ultra-low-power (ULP) energy-harvesting sensor nodes represent a viable and scalable solution to this problem.
+
+ULP energy-harvesting sensors are devices that capture information about their surroundings, while consuming few milliwatts of power. 
+%
+This power is generally stored in an on-device energy-storage element like a battery or a capacitor, which are recharged by harvesting ambient energy. 
+%
+Applications on these sensors execute while there is energy available, and wait (often in low-power sleep modes) while energy is recharging. 
+%
+However, these energy-storage elements are often limited in size and capacity, since smaller form factors minimize deployment cost and impact. 
+%
+This constraint subsequently requires the system operation to be designed around small amounts of energy.
+
+Existing approaches optimize the system operation  for lowest energy consumption, while often sacrificing processing speed or latency. 
+%
+In an energy-harvesting device, the less energy we use for system operation, the less the system waits for energy to recharge before resuming operation, improving system performance. 
+%
+It is important for sensor systems to have a high system performance so that they are sensing more frequently, reducing the risk of missing important events. 
+%
+This lowest-energy design works well when there is very little amount of energy to harvest, since the amount of recharging time saved by consuming lower energy is much greater than the time lost due to slower processing speeds.
+
+However, energy-harvesting conditions are highly volatile with a wide dynamic range. 
+%
+Designing the system for a fixed (generally lowest) energy consumption optimizes the system for only a part of this dynamic range, while causing it to operate sub-optimally for the rest. 
+%
+This happens because recharging time depends not only on the amount of energy to be recharged, but also on the amount of input power. 
+%
+For example, when the input power is small, a low-energy, low processing speed design might take longer to execute a task than a high-energy, high processing speed design, but it will have a faster overall system operation since the high-energy design will spend much longer recharging energy. 
+%
+However, at higher amounts of input power, the difference in their recharging times will be much smaller, and the high-energy design might have a faster overall system operation due to a faster execution latency. 
+%
+Existing approaches do not capture this effect in their designs and focus primarily on minimizing energy-consumption, resulting in suboptimal operation across varying energy-harvesting conditions.
+
+In this work, we present a new approach for designing ULP energy-harvesting sensor nodes.
+%
+We begin by proposing a new model of system performance in such devices, that combines the energy recharging time with task execution time. 
+%
+This model shows the effect of input power on the system performance, allowing for better performance optimization techniques. 
+%
+Using this model, we propose a novel system architecture for ULP energy-harvesting sensors that is dynamic in nature, with the ability to reconfigure its hardware and software in response to the amount of input power. 
+%
+We show that our approach enables us to achieve optimal system performance across different input power levels, which will empower future sensor nodes to maximize the amount of important information they capture.
